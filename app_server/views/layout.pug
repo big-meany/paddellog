@@ -23,17 +23,18 @@ html
 
       nav.mdl-navigation.mdl-layout--large-screen-only
        a.mdl-navigation__link(href="/login")
-        button.mdl-button.mdl-js-button.mdl-button--colored.nav Login&nbsp;&nbsp;
+        button.mdl-button.mdl-js-button.nav Login&nbsp;&nbsp;
          i.material-icons.accent account_circle
        a.mdl-navigation__link(href="/dataentry")
-        button.mdl-button.mdl-js-button.mdl-button--colored.nav Entry&nbsp;&nbsp;
+        button.mdl-button.mdl-js-button.nav Entry&nbsp;&nbsp;
          i.material-icons.accent create
        a.mdl-navigation__link(href="/dataview")
-        button.mdl-button.mdl-js-button.mdl-button--colored.nav View&nbsp;&nbsp;
+        button.mdl-button.mdl-js-button.nav View&nbsp;&nbsp;
          i.material-icons.accent unarchive
        a.mdl-navigation__link(href="/about")
-        button.mdl-button.mdl-js-button.mdl-button--colored.nav About&nbsp;&nbsp;
-         i.material-icons.accent info
+        button.mdl-button.mdl-js-button.nav About&nbsp;&nbsp;
+         i#about.material-icons.accent info
+         .mdl-tooltip(for="#about") About Paddle Log
 
     .mdl-layout__drawer
      h1.draw

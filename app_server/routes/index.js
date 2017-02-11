@@ -5,7 +5,8 @@ var ctrldata = require('../controllers/data');
 var ctrlOther = require('../controllers/other');
 
 /* home pages */
-router.get('/', ctrlhome.homelist);
+// -router.get('/', ctrlhome.homelist);
+router.get('/', ctrlhome.welcome);
 
 /* data pages */
 router.get('/login', ctrldata.login);

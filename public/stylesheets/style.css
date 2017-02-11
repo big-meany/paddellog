@@ -27,6 +27,17 @@ button.nav {
 button.nav:hover {
   background-color: rgba(245,255,255,0.38);
 }
+.welcomecontainer {
+  background-color: rgba(50,50,50,0.58);
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  width: 100%; height: 100%;
+}
+.welcome {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
 .draw {
   margin-top: 0;
   background-color: lightgrey;
