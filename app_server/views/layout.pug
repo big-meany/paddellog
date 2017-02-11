@@ -1,0 +1,55 @@
+doctype html
+html
+ head
+  meta(name='viewport', content='width-device-width, initial-scale=1.0')
+  title= title
+  link(rel='stylesheet', href='/stylesheets/material.min.css')
+  link(rel='stylesheet', href='https://code.getmdl.io/1.3.0/material.grey-light_green.min.css')
+  link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+  link(rel='stylesheet', href='/stylesheets/style.css')
+
+ body
+
+  .mdl-layout__container
+   .mdl-layout.mdl-js-layout.mdl-layout--fixed-header
+    header.mdl-layout__header.is-casting-shadow
+     .mdl-layout__header-row
+
+      h1
+       a(href="/")
+        img(src="/images/title.png" alt="logo").mdl-layout-title
+
+      .mdl-layout-spacer
+
+      nav.mdl-navigation.mdl-layout--large-screen-only
+       a.mdl-navigation__link(href="/login")
+        button.mdl-button.mdl-js-button.mdl-button--colored.nav Login&nbsp;&nbsp;
+         i.material-icons.accent account_circle
+       a.mdl-navigation__link(href="/dataentry")
+        button.mdl-button.mdl-js-button.mdl-button--colored.nav Entry&nbsp;&nbsp;
+         i.material-icons.accent create
+       a.mdl-navigation__link(href="/dataview")
+        button.mdl-button.mdl-js-button.mdl-button--colored.nav View&nbsp;&nbsp;
+         i.material-icons.accent unarchive
+       a.mdl-navigation__link(href="/about")
+        button.mdl-button.mdl-js-button.mdl-button--colored.nav About&nbsp;&nbsp;
+         i.material-icons.accent info
+
+    .mdl-layout__drawer
+     h1.draw
+      a(href="/")
+       img(src="/images/title.png" alt="logo").mdl-layout-title
+     nav.mdl-navigation
+      a.mdl-navigation__link(href="/login") Login
+      a.mdl-navigation__link(href="/dataentry") Entry
+      a.mdl-navigation__link(href="/dataview") View
+      a.mdl-navigation__link(href="/about") About
+
+    main.mdl-layout__content
+     block content
+
+    footer.mdl-mega-footer 
+     i.material-icons copyright&nbsp; 
+     span Wilderness Canoe
+  
+  script(src='/javascripts/material.min.js')
