@@ -1,6 +1,38 @@
 extends layout
 
 block content
- .mdl-grid
-  .mdl-cell.mdl-cell--12-col
-   h1.white Data Entry
+ h1.white Data Entry
+ .datacontainer
+
+  form(action="#" id="dataformentry")
+  .mdl-grid
+   .mdl-cell.mdl-cell--2-col                
+    //- Date Entry
+    .mdl-textfield.mdl-js-textfield.data-layout.mdl-textfield--floating-label
+     input.mdl-textfield__input(type="text", name="txtDate" maxlength="10")
+     label.mdl-textfield__label Date
+
+   .mdl-cell.mdl-cell--3-col
+    //- Location Entry
+    .mdl-textfield.mdl-js-textfield.data-layout.mdl-textfield--floating-label
+     input.mdl-textfield__input(type="text", name="location")
+     label.mdl-textfield__label Location
+
+   .mdl-cell.mdl-cell--2-col
+    //- Event Type Entry
+    .mdl-textfield.mdl-js-textfield.data-layout.mdl-textfield--floating-label
+     input.mdl-textfield__input(type="text", name="eventtype")
+     label.mdl-textfield__label Event Type
+
+   .mdl-cell.mdl-cell--2-col
+    //- Group Type Entry
+    .mdl-textfield.mdl-js-textfield.data-layout.mdl-textfield--floating-label
+     input.mdl-textfield__input(type="text", name="grouptype")
+     label.mdl-textfield__label Group Type
+
+   .mdl-cell.mdl-cell--1-col
+    //- Quality Entry
+    .mdl-textfield.mdl-js-textfield.data-layout.mdl-textfield--floating-label
+     input.mdl-textfield__input(type="number", name="quality" maxlength="1")
+     label.mdl-textfield__label Quality
+   .mdl-layout-spacer  
